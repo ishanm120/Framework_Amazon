@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Full Suite]" parallel="tests">
+  <test thread-count="2" name="test2(failed)" parallel="tests">
+    <classes>
+      <class name="testCases.HomePageTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="extentReportInt"/>
+          <include name="endReport"/>
+          <include name="verifySearchFieldDisplayed"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.HomePageTest -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="2" name="test1(failed)" parallel="tests">
+    <classes>
+      <class name="testCases.SignInPageTest">
+        <methods>
+          <include name="verifyErrorMessageForBlankEmailID"/>
+          <include name="verifyErrorMessageForInvalidEmailID"/>
+          <include name="setUpDriver"/>
+          <include name="verifyResetPasswordPage"/>
+          <include name="verifySuccessfulLogin"/>
+          <include name="verifyErrorMessageForInvalidPassword"/>
+          <include name="extentReportInt"/>
+          <include name="verifyErrorMessageForBlankPassword"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.SignInPageTest -->
+      <class name="testCases.BasketPageTest">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="extentReportInt"/>
+          <include name="verifyProductAddedToBasket"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.BasketPageTest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Full Suite] -->
