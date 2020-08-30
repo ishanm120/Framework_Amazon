@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="4018" started-at="2020-08-30T17:04:07Z" finished-at="2020-08-30T17:04:11Z">
+  <suite name="Regression Suite" duration-ms="4327" started-at="2020-08-30T17:21:24Z" finished-at="2020-08-30T17:21:28Z">
     <groups>
     </groups>
-    <test name="Regression Tests" duration-ms="4018" started-at="2020-08-30T17:04:07Z" finished-at="2020-08-30T17:04:11Z">
+    <test name="Regression Tests" duration-ms="4327" started-at="2020-08-30T17:21:24Z" finished-at="2020-08-30T17:21:28Z">
       <class name="testCases.HomePageTest">
-        <test-method status="PASS" signature="extentReportInt(org.testng.ITestContext)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="extentReportInt" is-config="true" duration-ms="150" started-at="2020-08-30T17:04:07Z" finished-at="2020-08-30T17:04:07Z">
+        <test-method status="PASS" signature="extentReportInt(org.testng.ITestContext)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="extentReportInt" is-config="true" duration-ms="145" started-at="2020-08-30T17:21:24Z" finished-at="2020-08-30T17:21:24Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportInt -->
-        <test-method status="PASS" signature="setUpDriver(java.lang.reflect.Method)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="setUpDriver" is-config="true" duration-ms="1747" started-at="2020-08-30T17:04:07Z" finished-at="2020-08-30T17:04:08Z">
+        <test-method status="PASS" signature="setUpDriver(java.lang.reflect.Method)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="setUpDriver" is-config="true" duration-ms="2093" started-at="2020-08-30T17:21:24Z" finished-at="2020-08-30T17:21:26Z">
           <params>
             <param index="0">
               <value>
@@ -29,11 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="verifySearchFieldDisplayed()[pri:0, instance:testCases.HomePageTest@614ddd49]" name="verifySearchFieldDisplayed" duration-ms="2100" started-at="2020-08-30T17:04:08Z" finished-at="2020-08-30T17:04:11Z">
+        <test-method status="PASS" signature="verifySearchFieldDisplayed()[pri:0, instance:testCases.HomePageTest@614ddd49]" name="verifySearchFieldDisplayed" duration-ms="2085" started-at="2020-08-30T17:21:26Z" finished-at="2020-08-30T17:21:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchFieldDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="tearDown" is-config="true" duration-ms="158" started-at="2020-08-30T17:04:11Z" finished-at="2020-08-30T17:04:11Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="tearDown" is-config="true" duration-ms="136" started-at="2020-08-30T17:21:28Z" finished-at="2020-08-30T17:21:28Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testCases.HomePageTest@614ddd49]" name="endReport" is-config="true" duration-ms="281" started-at="2020-08-30T17:04:11Z" finished-at="2020-08-30T17:04:11Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testCases.HomePageTest@614ddd49]" name="endReport" is-config="true" duration-ms="275" started-at="2020-08-30T17:21:28Z" finished-at="2020-08-30T17:21:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
