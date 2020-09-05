@@ -30,8 +30,7 @@ public class CommonUtils {
 	public static Properties properties;
 	public static Properties environmentProperties;
 	public static String propertiesFilePath = "/src/test/resources/configuration.properties";
-	public static String environementPropertiesFilePath = String.format("/src/test/resources/properties/%s",
-			System.getProperty("configuration"));
+	public static String environementPropertiesFilePath = String.format("/src/test/resources/properties/%s",System.getProperty("configuration"));
 
 	public static String productName;
 	public static String productPrice;
@@ -71,11 +70,11 @@ public class CommonUtils {
 		extent = new ExtentReports(); // create object of ExtentReports
 		extent.attachReporter(htmlReporter);
 
-		htmlReporter.config().setDocumentTitle("Project Report : Amazon.com"); // Tittle of Report
+		htmlReporter.config().setDocumentTitle("Project Report : Amazon.com"); // Title of Report
 		htmlReporter.config().setReportName("Extent Report"); // Name of the report
 		htmlReporter.config().setTheme(Theme.DARK);// Default Theme of Report
 
-		// General information releated to application
+		// General information related to application
 		extent.setSystemInfo("Application Name", "Amazon.com");
 		extent.setSystemInfo("User Name", "Ashutosh Mittal");
 		extent.setSystemInfo("Envirnoment", "Test Env");
@@ -110,7 +109,6 @@ public class CommonUtils {
 		try {
 			properties.load(reader);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -121,7 +119,6 @@ public class CommonUtils {
 		try {
 			environmentProperties.load(reader);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

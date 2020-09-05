@@ -11,10 +11,10 @@ public interface CommonConstants {
 	public static final String FIRST_LEVEL_CATEGORY_SHIRTS = "Shirts";
 
 	// ============================================Valid Login Test Data===========================
-	public static final String VALID_EMAIL_ID = "ishanmittal120@gmail.com";
-	public static final String VALID_PHONE_NUMER = "9999776630";
-	public static final String VALID_PASSWORD = "Amazon@1506";
-	public static final String VALID_USERNAME = "ishan";
+	public static final String VALID_EMAIL_ID = "testmail1@gmail.com";
+	public static final String VALID_PHONE_NUMER = "99999999999";
+	public static final String VALID_PASSWORD = "Test@123";
+	public static final String VALID_USERNAME = "TestUser";
 
 	// ============================================InValid Login Test Data===========================
 	public static final String INVALID_EMAIL_ID = "dummy@gmail.com";

@@ -3,7 +3,6 @@ package utilsPackage;
 
 public class VerificationUtils extends CommonUtils {
 	
-	//public static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getRootLogger();
 	
 	public static boolean equalFields(String name, Integer actual, Integer expected) {
 		if (actual == expected) {
