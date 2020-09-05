@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
-  <test thread-count="5" name="Regression Tests(failed)">
+  <test thread-count="5" name="Regression Tests(failed)" parallel="methods">
     <classes>
       <class name="testCases.HomePageTest">
         <methods>
           <include name="setUpDriver"/>
           <include name="extentReportInt"/>
+          <include name="verifySearchKeyword"/>
           <include name="endReport"/>
           <include name="verifySearchFieldDisplayed"/>
           <include name="tearDown"/>

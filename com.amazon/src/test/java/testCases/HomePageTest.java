@@ -11,12 +11,13 @@ public class HomePageTest extends BaseUtils{
 	
 	
 	@Test
-	public void verifySearchFieldDisplayed() {
+	public void verifySearchFieldDisplayed() throws InterruptedException {
 		homePage.openHomePage();
 		Assert.assertEquals(true, homePage.isSearchFieldDisplayed());
+		Thread.sleep(5000);
 	}
 	
-	//@Test(groups="Regression")
+	@Test(groups="Regression")
 	public void verifySearchKeyword() {
 		homePage.openHomePage();
 		homePage.searchForKeyword(CommonConstants.SEARCH_KEYWORD_SHOES);

@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.HomePageTest">
+      <class name="testCases.DockerDemo">
         <methods>
-          <include name="setUpDriver"/>
-          <include name="extentReportInt"/>
-          <include name="endReport"/>
-          <include name="verifySearchFieldDisplayed"/>
-          <include name="tearDown"/>
+          <include name="demo"/>
         </methods>
-      </class> <!-- testCases.HomePageTest -->
+      </class> <!-- testCases.DockerDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

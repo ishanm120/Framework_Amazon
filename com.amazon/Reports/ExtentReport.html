@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 30, 2020 10:58:09 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 4, 2020 01:03:42 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -68,6 +68,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -110,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -133,15 +134,29 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>verifySearchFieldDisplayed</span>
-						<span class='test-time'>Aug 30, 2020 10:58:09 PM</span>
+						<span class='test-name'>verifySearchKeyword</span>
+						<span class='test-time'>Sep 4, 2020 01:03:43 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 30, 2020 10:58:09 PM</span>
-	<span class='label end-time'>Aug 30, 2020 10:58:13 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+373ms</span>
+	<span class='label start-time'>Sep 4, 2020 01:03:43 AM</span>
+	<span class='label end-time'>Sep 4, 2020 01:03:43 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>verifySearchFieldDisplayed</span>
+						<span class='test-time'>Sep 4, 2020 01:03:43 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 4, 2020 01:03:43 AM</span>
+	<span class='label end-time'>Sep 4, 2020 01:03:47 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+450ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -155,7 +170,7 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:09 PM</td>
+				<td class='timestamp'>1:03:43 AM</td>
 				<td class='step-details'>
 						------- STARTING NEW WEB INSTANCE ------------
 					
@@ -163,7 +178,15 @@
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:11 PM</td>
+				<td class='timestamp'>1:03:43 AM</td>
+				<td class='step-details'>
+						------- STARTING NEW WEB INSTANCE ------------
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>1:03:46 AM</td>
 				<td class='step-details'>
 						<-------START TEST CASE :  verifySearchFieldDisplayed ----------->
 					
@@ -171,7 +194,7 @@
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:11 PM</td>
+				<td class='timestamp'>1:03:46 AM</td>
 				<td class='step-details'>
 						Open Home Page Url:https://www.amazon.in
 					
@@ -179,41 +202,97 @@
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:13 PM</td>
+				<td class='timestamp'>1:03:46 AM</td>
 				<td class='step-details'>
-						Check if Search field is displayed
+						-------Test Case with name verifySearchFieldDisplayed is [ FAILED ] ------------------
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>1:03:46 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>verifySearchFieldDisplayed - Test Case Failed</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>1:03:46 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>java.lang.NullPointerException - Test Case Failed</span>
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:13 PM</td>
+				<td class='timestamp'>1:03:46 AM</td>
 				<td class='step-details'>
-						-------Test Case with name verifySearchFieldDisplayed is  [ PASSED ] --------------------
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>10:58:13 PM</td>
-				<td class='step-details'>
-						<span class='badge white-text green'>verifySearchFieldDisplayed Test Case PASSED</span>
+						<-------START TEST CASE :  verifySearchKeyword ----------->
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:13 PM</td>
+				<td class='timestamp'>1:03:46 AM</td>
 				<td class='step-details'>
-						Clear all cookies
+						Open Home Page Url:https://www.amazon.in
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>10:58:13 PM</td>
+				<td class='timestamp'>1:03:46 AM</td>
 				<td class='step-details'>
-						Closing all Browsers Instances
+						-------Test Case with name verifySearchKeyword is [ FAILED ] ------------------
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>1:03:46 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>verifySearchKeyword - Test Case Failed</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>1:03:46 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>java.lang.NullPointerException - Test Case Failed</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>1:03:47 AM</td>
+				<td class='step-details'>
+						Test Case Failed Snapshot is below
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/ishan.mittal/Documents/IshanWorkspace/Framework_Amazon/com.amazon/Screenshots/verifySearchFieldDisplayed20200904010346.png' src='/Users/ishan.mittal/Documents/IshanWorkspace/Framework_Amazon/com.amazon/Screenshots/verifySearchFieldDisplayed20200904010346.png'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>1:03:47 AM</td>
+				<td class='step-details'>
+						Closing current Browser Instance ======== 12
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>1:03:47 AM</td>
+				<td class='step-details'>
+						Test Case Failed Snapshot is below
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/ishan.mittal/Documents/IshanWorkspace/Framework_Amazon/com.amazon/Screenshots/verifySearchKeyword20200904010346.png' src='/Users/ishan.mittal/Documents/IshanWorkspace/Framework_Amazon/com.amazon/Screenshots/verifySearchKeyword20200904010346.png'>
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>1:03:47 AM</td>
+				<td class='step-details'>
+						Closing current Browser Instance ======== 13
 					
 				</td>
 			</tr>
@@ -250,7 +329,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -262,19 +341,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 30, 2020 10:58:09 PM</div>
+					<div class='panel-lead'>Sep 4, 2020 01:03:42 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 30, 2020 10:58:13 PM</div>
+			 		<div class='panel-lead'>Sep 4, 2020 01:03:49 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+870ms</div>
+					<div class='panel-lead'>0h 0m 6s+150ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -309,14 +388,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
+                parentCount: 2,
 				passParent: 1,
-				failParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -341,7 +420,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "verifySearchFieldDisplayed":4.373
+			        "verifySearchKeyword":0,"verifySearchFieldDisplayed":4.45
 			};
 		</script>
 	

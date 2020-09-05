@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
@@ -42,7 +43,7 @@ public class BaseUtils extends CommonUtils {
 	public HomePage homePage;
 
 	@BeforeMethod
-	public void setUpDriver(Method m) throws FileNotFoundException {
+	public void setUpDriver(Method m) throws FileNotFoundException, MalformedURLException, InterruptedException {
 		test = extent.createTest(m.getName());
 		setUpDriverPage();
 		homePage = new HomePage();
@@ -67,9 +68,10 @@ public class BaseUtils extends CommonUtils {
 			stepInfo("-------Test Case with name " + result.getName() + " is  [ PASSED ] --------------------");
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
 		}
-		clearCookies();
-		stepInfo("Closing all Browsers Instances");
-		driver.quit();
+		//clearCookies();
+		stepInfo("Closing current Browser Instance ======== " + Thread.currentThread().getId());
+		
+		driver.close();
 	}
 
 	@BeforeSuite

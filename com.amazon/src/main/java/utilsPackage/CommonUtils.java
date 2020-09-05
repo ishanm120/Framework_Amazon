@@ -3,12 +3,18 @@ package utilsPackage;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.apache.commons.mail.EmailException;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -21,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @SuppressWarnings("deprecation")
 public class CommonUtils {
 
-	public static WebDriver driver = null;
+	public WebDriver driver = null;
 	@SuppressWarnings("deprecation")
 	public ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
@@ -41,7 +47,7 @@ public class CommonUtils {
 	public static String extentReportPath = System.getProperty("user.dir") + "/Reports/ExtentReport.html";
 	public static String suiteName;
 
-	public void setUpDriverPage() throws FileNotFoundException {
+	public void setUpDriverPage() throws FileNotFoundException, MalformedURLException {
 		stepInfo("------- STARTING NEW WEB INSTANCE ------------");
 		readPropertiesFile(System.getProperty("user.dir") + propertiesFilePath);
 		readEnvironmentPropertiesFile(System.getProperty("user.dir") + environementPropertiesFilePath);
@@ -53,13 +59,16 @@ public class CommonUtils {
 		driver.manage().window().maximize();
 	}
 
-	public void setUpDesktopDriver() {
+	public void setUpDesktopDriver() throws MalformedURLException {
 		String browserName = System.getProperty(CommonConstants.BROWSER_PARAMETER) == null
 				? environmentProperties.getProperty("Browser")
 				: System.getProperty(CommonConstants.BROWSER_PARAMETER);
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			DesiredCapabilities cap= new DesiredCapabilities();
+			cap.setBrowserName(BrowserType.CHROME);
+			cap.setPlatform(Platform.LINUX);
+			driver = new RemoteWebDriver(new URL("http://192.168.1.58:4444/wd/hub"), cap);
+			System.out.println("OPNED THREAD ID ========== "+ Thread.currentThread().getId());
 		}
 
 	}

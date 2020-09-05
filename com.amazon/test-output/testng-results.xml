@@ -1,50 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="4503" started-at="2020-08-30T17:28:09Z" finished-at="2020-08-30T17:28:13Z">
+  <suite name="Regression Suite" duration-ms="5873" started-at="2020-09-03T19:33:43Z" finished-at="2020-09-03T19:33:48Z">
     <groups>
+      <group name="Regression">
+        <method signature="HomePageTest.verifySearchKeyword()[pri:0, instance:testCases.HomePageTest@694e1548]" name="verifySearchKeyword" class="testCases.HomePageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="Regression Tests" duration-ms="4503" started-at="2020-08-30T17:28:09Z" finished-at="2020-08-30T17:28:13Z">
+    <test name="Regression Tests" duration-ms="5873" started-at="2020-09-03T19:33:43Z" finished-at="2020-09-03T19:33:48Z">
       <class name="testCases.HomePageTest">
-        <test-method status="PASS" signature="extentReportInt(org.testng.ITestContext)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="extentReportInt" is-config="true" duration-ms="141" started-at="2020-08-30T17:28:09Z" finished-at="2020-08-30T17:28:09Z">
+        <test-method status="PASS" signature="extentReportInt(org.testng.ITestContext)[pri:0, instance:testCases.HomePageTest@694e1548]" name="extentReportInt" is-config="true" duration-ms="145" started-at="2020-09-03T19:33:42Z" finished-at="2020-09-03T19:33:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7a7471ce]]>
+                <![CDATA[org.testng.TestRunner@378542de]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReportInt -->
-        <test-method status="PASS" signature="setUpDriver(java.lang.reflect.Method)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="setUpDriver" is-config="true" duration-ms="2242" started-at="2020-08-30T17:28:09Z" finished-at="2020-08-30T17:28:11Z">
+        <test-method status="PASS" signature="setUpDriver(java.lang.reflect.Method)[pri:0, instance:testCases.HomePageTest@694e1548]" name="setUpDriver" is-config="true" duration-ms="3869" started-at="2020-09-03T19:33:43Z" finished-at="2020-09-03T19:33:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testCases.HomePageTest.verifySearchFieldDisplayed()]]>
+                <![CDATA[public void testCases.HomePageTest.verifySearchFieldDisplayed() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="verifySearchFieldDisplayed()[pri:0, instance:testCases.HomePageTest@614ddd49]" name="verifySearchFieldDisplayed" duration-ms="2109" started-at="2020-08-30T17:28:11Z" finished-at="2020-08-30T17:28:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchFieldDisplayed -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTest@614ddd49]" name="tearDown" is-config="true" duration-ms="140" started-at="2020-08-30T17:28:13Z" finished-at="2020-08-30T17:28:13Z">
+        <test-method status="PASS" signature="setUpDriver(java.lang.reflect.Method)[pri:0, instance:testCases.HomePageTest@694e1548]" name="setUpDriver" is-config="true" duration-ms="3896" started-at="2020-09-03T19:33:43Z" finished-at="2020-09-03T19:33:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchFieldDisplayed status=SUCCESS method=HomePageTest.verifySearchFieldDisplayed()[pri:0, instance:testCases.HomePageTest@614ddd49] output={null}]]]>
+                <![CDATA[public void testCases.HomePageTest.verifySearchKeyword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="FAIL" signature="verifySearchFieldDisplayed()[pri:0, instance:testCases.HomePageTest@694e1548]" name="verifySearchFieldDisplayed" duration-ms="8" started-at="2020-09-03T19:33:46Z" finished-at="2020-09-03T19:33:46Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.HomePage.openHomePage(HomePage.java:72)
+at testCases.HomePageTest.verifySearchFieldDisplayed(HomePageTest.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchFieldDisplayed -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTest@694e1548]" name="tearDown" is-config="true" duration-ms="677" started-at="2020-09-03T19:33:46Z" finished-at="2020-09-03T19:33:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchFieldDisplayed status=FAILURE method=HomePageTest.verifySearchFieldDisplayed()[pri:0, instance:testCases.HomePageTest@694e1548] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:testCases.HomePageTest@614ddd49]" name="endReport" is-config="true" duration-ms="280" started-at="2020-08-30T17:28:13Z" finished-at="2020-08-30T17:28:14Z">
+        <test-method status="FAIL" signature="verifySearchKeyword()[pri:0, instance:testCases.HomePageTest@694e1548]" name="verifySearchKeyword" duration-ms="6" started-at="2020-09-03T19:33:46Z" finished-at="2020-09-03T19:33:46Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.HomePage.openHomePage(HomePage.java:72)
+at testCases.HomePageTest.verifySearchKeyword(HomePageTest.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchKeyword -->
+        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testCases.HomePageTest@694e1548]" name="tearDown" is-config="true" duration-ms="1953" started-at="2020-09-03T19:33:46Z" finished-at="2020-09-03T19:33:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchKeyword status=FAILURE method=HomePageTest.verifySearchKeyword()[pri:0, instance:testCases.HomePageTest@694e1548] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MACPRO45.local', ip: 'fe80:0:0:0:184b:2bf0:ca66:77b1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: /tmp/.com.google.Chrome.A8AjF4}, goog:chromeOptions: {debuggerAddress: localhost:33231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4d6b997c29ddaf5ad30fcedf39a...}
+Session ID: 4d6b997c29ddaf5ad30fcedf39a6848b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MACPRO45.local', ip: 'fe80:0:0:0:184b:2bf0:ca66:77b1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 85.0.4183.83 (94abc2237ae0c..., userDataDir: /tmp/.com.google.Chrome.A8AjF4}, goog:chromeOptions: {debuggerAddress: localhost:33231}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4d6b997c29ddaf5ad30fcedf39a...}
+Session ID: 4d6b997c29ddaf5ad30fcedf39a6848b
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+at baseTest.BaseUtils.tearDown(BaseUtils.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testCases.HomePageTest@694e1548]" name="endReport" is-config="true" duration-ms="276" started-at="2020-09-03T19:33:49Z" finished-at="2020-09-03T19:33:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
