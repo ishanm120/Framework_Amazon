@@ -1,6 +1,6 @@
 # Framework_Amazon
 # A Page object Model with Page Factory concept
-# Used Amazon.com as dummy site for automation
+ Used Amazon.com as dummy site for automation
 # Following components & libraries are used:
   1) Maven
   2) TestNG
